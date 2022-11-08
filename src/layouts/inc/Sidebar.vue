@@ -46,8 +46,23 @@
           data-widget="treeview"
           role="menu"
           data-accordion="false">
+          <nav-item icon="fas fa-home" link="/"> 
+            home
+          </nav-item>
+          <nav-item icon="fas fa-info-circle" link="/about"> 
+            about
+          </nav-item>
         </ul>
       </nav>
     </div>
   </aside>
 </template>
+
+<script>
+import NavItem from "./Navitem.vue";
+export default {
+  components:{
+    NavItem
+  }
+}
+</script>
